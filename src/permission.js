@@ -34,6 +34,7 @@ router.beforeEach(async(to, from, next) => {
           // get user info
           const info = await store.dispatch('user/getInfo')
           const accessRoutes = await store.dispatch('permission/generateRoutes', info)
+
           // dynamically add accessible routes
           router.addRoutes(accessRoutes)
 

@@ -34,7 +34,7 @@ export const constantRoutes = [
     }]
   },
   {
-    path: '/',
+    path: '/t',
     component: Layout,
     redirect: '/test',
     children: [{
